@@ -1,0 +1,54 @@
+.carousel-container {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(238, 142, 84, 0.7641107468377977) 0%, rgba(242, 186, 140, 0.4980043042607668) 0%, rgba(244, 153, 77, 0.4531863770898985) 0%, rgba(255, 255, 255, 1) 66%, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 1) 89%, rgba(255, 255, 255, 1) 99%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 1) 100%);
+   
+    padding: 50px;
+    position: relative; 
+  }
+  
+  .card {
+    padding: 10px;
+    text-align: center;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 0 10px; 
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  
+  .card-info {
+    padding: 10px;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .arrow.next {
+    right: -25px;
+  }
+  
+  .arrow.prev {
+    left: -25px;
+  }
+  
+  .slick-dots li button:before {
+    color: #333;
+  }
+  
+  
+  .slick-slide {
+    padding: 0 15px;
+  }

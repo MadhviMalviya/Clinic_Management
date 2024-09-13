@@ -1,0 +1,36 @@
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(238, 142, 84, 0.7641107468377977) 0%, rgba(242, 186, 140, 0.4980043042607668) 0%, rgba(244, 153, 77, 0.4531863770898985) 0%, rgba(255, 255, 255, 1) 66%, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 1) 89%, rgba(255, 255, 255, 1) 99%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 1) 100%);
+    height: 100vh;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.home-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.hero-img {
+    margin-top: 4.3rem;
+    width: 100%;
+    max-height: 72vh;
+    object-fit: cover;
+    
+    background-image: url('img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: bottom;
+
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 48px;
+    text-align: center;
+
+}

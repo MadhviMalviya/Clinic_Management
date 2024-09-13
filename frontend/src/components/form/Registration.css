@@ -1,0 +1,66 @@
+.form-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form-container h1 {
+    margin-bottom: 0px;
+
+}
+form {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 5rem;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.374);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin-bottom: 0.2rem;
+}
+
+form input {
+    margin-bottom: .8rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #f35d18;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: orangered;
+}
+
+form h1 {
+    font-family: sans-serif;
+    text-align: center;
+    color: rgb(49, 12, 12);
+}
+
+form p {
+    color: red;
+    margin-bottom: 1rem;
+}
+
+
+/* Develop an application to manage conference user should be to register for conferences, view schedules, and  submit feedback, admins should be able to manage conference details and registration. Save all data to a database */

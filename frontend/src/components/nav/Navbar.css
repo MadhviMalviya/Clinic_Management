@@ -1,0 +1,114 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    background-color:white;
+    color:#333;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo h1 {
+    color: #f35d18; 
+    background-clip: text;
+    -webkit-background-clip: text; 
+    /* color: transparent; */
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hamburger-checkbox {
+    display: none;
+}
+
+.hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.nav-items ul {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-items li {
+    margin: 0 10px;
+}
+
+.nav-items a {
+    font-weight: 500;
+    color: rgb(65, 63, 63);
+    text-decoration: none;
+
+    
+}
+.nav-items a:hover{
+    color:#f35d18;
+    transition: color 0.3s ease;
+
+}
+
+.nav-btn button {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #f35d18;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 7rem;
+    text-align: center;
+    border-radius: 5px;
+}
+.nav-btn button:hover {
+    background-color: orangered;
+}
+
+/* Media query */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(238, 142, 84, 0.7641107468377977) 0%, rgba(242, 186, 140, 0.4980043042607668) 0%, rgba(244, 153, 77, 0.4531863770898985) 0%, rgba(255, 255, 255, 1) 66%, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 1) 89%, rgba(255, 255, 255, 1) 99%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 1) 100%);
+    }
+
+    .nav-items ul {
+        display: block;
+        padding: 0;
+    }
+
+    .nav-items li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hamburger-checkbox:checked ~ .nav-items {
+        display: flex;
+    }
+}
